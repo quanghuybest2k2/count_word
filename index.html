@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Đếm số từ trong đoạn văn bản" />
+    <meta name="keywords" content="đếm số từ, đếm từ, đếm từ trong văn bản" />
+    <meta name="author" content="quanghuybest2k2" />
+    <title>Đếm số từ</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="theme-container">
+      <p style="font-weight: 700">Giao diện:</p>
+      <select id="themeSwitcher" onchange="changeTheme()">
+        <option value="system">Hệ thống</option>
+        <option value="light">Sáng</option>
+        <option value="dark">Tối</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <h1>Đếm Số Từ</h1>
+      <textarea id="inputText" placeholder="Nhập đoạn văn bản..."></textarea>
+      <button onclick="countWord()">Đếm số từ</button>
+      <button id="clearButton" onclick="clearContent()">Làm sạch</button>
+      <div class="result" id="result"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
